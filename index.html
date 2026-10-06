@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mega Fresh Carolina — website showcase</title>
+<meta name="description" content="The website for Supermercados Mega Fresh Carolina: weekly specials, a flip-through shopper, every department and a TV mode. Designed and built by Gianlexis Quiñones.">
+<meta property="og:title" content="Mega Fresh Carolina — website">
+<meta property="og:description" content="Your corner supermarket, online.">
+<meta property="og:image" content="https://ohitsgian21.github.io/megafresh-carolina-showcase/assets/poster.jpg">
+<meta name="theme-color" content="#C81016">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6f3;--card:#fff;--line:#eaded9;--red:#c81016;--ink:#1a1414;--mute:#5d5050}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.65 "Open Sans",system-ui,sans-serif;overflow-x:hidden;
+ background-image:radial-gradient(900px 620px at 0% -6%,rgba(200,16,22,.13),transparent 70%),radial-gradient(rgba(120,20,20,.09) 1.2px,transparent 1.3px);background-size:auto,32px 32px}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2{font-family:Montserrat,system-ui,sans-serif;font-weight:900;letter-spacing:-.035em;line-height:1.05}
+.k{font:800 13px Montserrat,sans-serif;letter-spacing:.28em;color:var(--red);text-transform:uppercase}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0}
+.brand{display:flex;align-items:center;gap:12px;font:800 18px Montserrat,sans-serif;text-decoration:none}
+.brand img{width:40px;height:40px;border-radius:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--red);color:#fff;font:800 15px Montserrat,sans-serif;text-decoration:none;padding:13px 22px;border-radius:999px;white-space:nowrap}
+.btn:hover{background:#a80d12}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+header{padding:48px 0 20px}
+.pill{display:inline-block;background:var(--red);color:#fff;font:800 12.5px Montserrat,sans-serif;letter-spacing:.2em;padding:9px 16px;border-radius:999px}
+header h1{font-size:clamp(42px,7.6vw,96px);margin:22px 0;max-width:13ch}
+header h1 em{font-style:normal;color:var(--red)}
+header p{max-width:60ch;color:var(--mute);font-size:clamp(16px,1.6vw,19px)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.frame{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 40px 100px rgba(90,10,10,.16)}
+.hero-v{margin-top:44px}
+.hero-v video{width:100%;aspect-ratio:16/9;background:#c81016}
+.bar{height:36px;background:#f0ebe8;border-bottom:1px solid #e0d8d4;display:flex;align-items:center;gap:7px;padding:0 13px}
+.bar i{width:10px;height:10px;border-radius:50%}
+.bar i:nth-child(1){background:#ff5f57}.bar i:nth-child(2){background:#febc2e}.bar i:nth-child(3){background:#28c840}
+.bar span{margin-left:12px;font-size:12.5px;font-weight:600;color:var(--mute);background:#fff;border:1px solid #e4dcd8;border-radius:7px;padding:2px 12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:54px}
+.stats div{background:#fff;padding:22px 20px}
+.stats b{display:block;font:900 42px/1 Montserrat,sans-serif;letter-spacing:-.03em;color:var(--red)}
+.stats span{font-size:14px;color:var(--mute)}
+section{padding:92px 0 0}
+section h2{font-size:clamp(30px,4.4vw,54px);margin:14px 0 18px;max-width:17ch}
+.lede{color:var(--mute);max-width:58ch}
+.tool{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,8fr);gap:44px;align-items:start}
+.tool .shots{display:grid;gap:18px}
+ul.f{list-style:none;margin-top:24px;display:grid;gap:15px}
+ul.f li{padding-left:22px;position:relative;color:var(--mute)}
+ul.f li::before{content:"";position:absolute;left:0;top:.62em;width:9px;height:9px;border-radius:50%;background:var(--red)}
+ul.f b{color:var(--ink)}
+.dark{background:#0d0d0e;border-color:#0d0d0e;padding:10px}
+.dark img{border-radius:8px}
+footer{margin-top:110px;background:var(--red);color:#fff;padding:60px 0 64px}
+footer .k{color:#ffd9d9}
+footer .by{font:900 clamp(26px,3.8vw,44px) Montserrat,sans-serif;letter-spacing:-.03em;margin:12px 0 14px}
+footer p{color:#ffe3e3;font-size:14.5px;max-width:76ch;margin-top:8px}
+footer .btn{background:#fff;color:var(--red);margin-top:24px}
+@media (max-width:860px){.tool{grid-template-columns:1fr;gap:26px}.stats{grid-template-columns:repeat(2,1fr)}section{padding-top:70px}nav .btn{display:none}header{padding-top:24px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="#top"><img src="assets/favicon.png" alt="">Mega Fresh Carolina</a>
+  <a class="btn" href="https://superelmejor.com">Visit the live site</a>
+</nav>
+
+<header id="top">
+  <span class="pill">Supermercados Mega Fresh · Carolina, PR</span>
+  <h1>Your corner supermarket, <em>online.</em></h1>
+  <p>The website I designed and built for Supermercados Mega Fresh Carolina. Shoppers can check the week's specials, flip through the printed shopper, browse every department and reach the store, and a TV mode turns it into signage for the screens inside.</p>
+  <div class="cta">
+    <a class="btn" href="https://superelmejor.com">superelmejor.com</a>
+    <a class="btn ghost" href="#tour">Take the tour</a>
+  </div>
+  <div class="frame hero-v">
+    <video src="assets/promo.mp4" poster="assets/poster.jpg" controls autoplay muted loop playsinline preload="metadata"></video>
+  </div>
+  <div class="stats">
+    <div><b>68</b><span>specials, filterable by department</span></div>
+    <div><b>6</b><span>departments filmed in the store</span></div>
+    <div><b>5</b><span>pages plus a TV mode</span></div>
+    <div><b>ES</b><span>written for the store's customers</span></div>
+  </div>
+</header>
+
+<section class="tool" id="tour">
+  <div>
+    <div class="k">01 — Home</div>
+    <h2>The whole store in one scroll.</h2>
+    <ul class="f">
+      <li><b>Specials first.</b> The hero rotates the week's offers and leads straight to them.</li>
+      <li><b>Departments at a glance.</b> Six areas of the store, each with its own in-aisle clip.</li>
+      <li><b>Search everywhere.</b> One search box in the header looks across products and categories.</li>
+      <li><b>Reviews and hours.</b> Customer reviews, opening hours and contact details close the page.</li>
+    </ul>
+  </div>
+  <div class="shots">
+    <div class="frame"><div class="bar"><i></i><i></i><i></i><span>superelmejor.com</span></div><img src="assets/screenshots/home.jpg" alt="Home page hero with the weekly specials call to action" loading="lazy"></div>
+    <div class="frame"><div class="bar"><i></i><i></i><i></i><span>superelmejor.com</span></div><img src="assets/screenshots/specials.jpg" alt="Departments and featured specials on the home page" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="tool">
+  <div>
+    <div class="k">02 — Ofertas</div>
+    <h2>A weekly shopper you can flip through.</h2>
+    <ul class="f">
+      <li><b>The circular, on the page.</b> The printed shopper appears as a booklet with pages that turn.</li>
+      <li><b>Filtered in one tap.</b> Chips narrow 68 specials by department.</li>
+      <li><b>Solo Frío.</b> A toggle shows only chilled items.</li>
+    </ul>
+  </div>
+  <div class="shots">
+    <div class="frame"><div class="bar"><i></i><i></i><i></i><span>superelmejor.com/ofertas</span></div><img src="assets/screenshots/flipbook.jpg" alt="The weekly shopper as a flip-through booklet" loading="lazy"></div>
+    <div class="frame"><div class="bar"><i></i><i></i><i></i><span>superelmejor.com/ofertas</span></div><img src="assets/screenshots/filters.jpg" alt="Department filter chips above the specials grid" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="tool">
+  <div>
+    <div class="k">03 — Categorías</div>
+    <h2>Walk the aisles before you arrive.</h2>
+    <p class="lede">Each department card plays a short clip filmed in the actual aisle, so customers see the real store and not stock photos.</p>
+  </div>
+  <div class="shots">
+    <div class="frame"><div class="bar"><i></i><i></i><i></i><span>superelmejor.com/categorias</span></div><img src="assets/screenshots/categorias.jpg" alt="Department cards with clips filmed inside the store" loading="lazy"></div>
+  </div>
+</section>
+
+<section>
+  <div class="k">04 — Mobile</div>
+  <h2>Made for the phone in your hand.</h2>
+  <p class="lede">Every page reflows for a small screen, menu and search included.</p>
+  <div class="frame" style="margin-top:32px"><img src="assets/screenshots/mobile.jpg" alt="Three phone-sized views of the home page" loading="lazy"></div>
+</section>
+
+<section class="tool">
+  <div>
+    <div class="k">05 — Modo TV</div>
+    <h2>A TV mode for the screens in the store.</h2>
+    <ul class="f">
+      <li><b>Full-screen slideshow.</b> The week's specials rotate on their own.</li>
+      <li><b>Live clock and ticker.</b> Address, phone number and hours scroll along the bottom.</li>
+      <li><b>One key.</b> Press F on any TV browser to go full screen.</li>
+    </ul>
+  </div>
+  <div class="shots">
+    <div class="frame dark"><img src="assets/screenshots/tv-specials.jpg" alt="TV mode showing featured specials" loading="lazy"></div>
+    <div class="frame dark"><img src="assets/screenshots/tv-hero.jpg" alt="TV mode title slide" loading="lazy"></div>
+  </div>
+</section>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="k">Credits</div>
+    <div class="by">Designed and built by Gianlexis Quiñones</div>
+    <p>Live at superelmejor.com for Supermercados Mega Fresh Carolina, Puerto Rico.</p>
+    <p>© 2026 Gianlexis Quiñones. All rights reserved. This page is a showcase; the site's working repository is private. The page layout started from a free HTML Codex template and was reworked for the store. Store name, logo and product imagery belong to their owners and are shown with permission.</p>
+    <a class="btn" href="https://superelmejor.com">Visit the live site</a>
+  </div>
+</footer>
+</body>
+</html>
