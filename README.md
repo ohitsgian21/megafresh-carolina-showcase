@@ -33,7 +33,7 @@ I designed and built this site for **Supermercados Mega Fresh Carolina** (El Mej
 
 <img src="assets/screenshots/home.jpg" alt="Home page hero with the weekly specials call to action">
 
-One scroll covers what a shopper needs: the week's specials, the store's departments, opening hours, customer reviews and how to get in touch. A search box in the header looks across products and categories from any page.
+One scroll covers what a shopper needs: the week's specials, the store's departments, opening hours, customer reviews and how to get in touch. A search box in the header looks across every special and category from any page.
 
 <img src="assets/screenshots/specials.jpg" alt="Departments and featured specials on the home page">
 
@@ -41,8 +41,8 @@ One scroll covers what a shopper needs: the week's specials, the store's departm
 
 <img src="assets/screenshots/flipbook.jpg" alt="The weekly shopper shown as a flip-through booklet">
 
-- **A shopper you can flip through.** The printed weekly circular is on the page as a booklet, with pages that turn.
-- **68 specials, filtered in one tap.** Chips narrow the list by department, and a "Solo Frío" toggle shows only chilled items.
+- **A shopper you can flip through.** The Mega Fresh shopper is on the page as an eight-page booklet, with pages that turn.
+- **155 specials, each with its photo.** Every item in the shopper is listed with its photo, size, sale price and regular price. Chips filter by department, and a "Solo Frío" toggle shows only chilled items.
 
 <img src="assets/screenshots/filters.jpg" alt="Department filter chips above the specials grid">
 
